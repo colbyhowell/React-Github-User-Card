@@ -3,9 +3,9 @@ import React from "react";
 const UserFeed = props => {
   console.log(props);
   return (
-    <div className="user-card">
+    <div className="row-flex">
       {props.users.map(user => {
-        return <div>{user.login}</div>;
+        return <div className="user-card">{user.login}</div>;
       })}
     </div>
   );

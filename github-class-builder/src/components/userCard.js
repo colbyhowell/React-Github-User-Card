@@ -3,7 +3,12 @@ import React from "react";
 import UserFeed from "./userFeed";
 
 const UserCard = props => {
-  return <div className="user-card-container"></div>;
+  console.log(props);
+  return (
+    <div className="user-card-container">
+      <UserFeed users={props.users} key={props.users.id} />
+    </div>
+  );
 };
 
 export default UserCard;

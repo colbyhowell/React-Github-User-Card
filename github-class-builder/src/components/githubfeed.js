@@ -1,6 +1,6 @@
 import React from "react";
 
-import UserFeed from "./userFeed";
+import UserCard from "./userCard";
 
 class GithubFeed extends React.Component {
   constructor() {
@@ -32,7 +32,7 @@ class GithubFeed extends React.Component {
     return (
       <div>
         <h1>Colby Howell Follows:</h1>
-        <UserFeed users={this.state.people} key={this.state.people.id} />
+        <UserCard users={this.state.people} key={this.state.people.id} />
       </div>
     );
   }
